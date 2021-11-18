@@ -1,0 +1,45 @@
+troughs			Trough times for the variable time series
+peaks			Peak times for the variable time series
+per			Period of the limit cycle  
+tend			Length of the time series   
+force			Times series of the external force
+par			Model parameter values
+parn			Model parameter names
+parnames		Model parameter descriptions
+sol			Times series with equally spaced timepoints
+odesol			Time series as output by the ODE solver
+dim			Number of model variables
+vnames			Names of the model variables
+solver			Name of the ODE solver used to generate the time series  
+name			Name of the model
+date			When the time series was created
+forced			0=a constant external force, 1=a non-constant external force
+plotting_timescale	Scaling factor for time units
+forceparams		External force(s)
+forceparams.force	Symbolic name in the model equations
+forceparams.name	Type selected
+forceparams.dawn	Dawn time (force comes on)
+forceparams.dusk	Dusk time (forces goes off)
+varnum			For unforced oscillators only, the variable used to define the starting point
+orbit_type		Oscillator or signal
+myfile			Path to where the data is saved
+theory			Results of times series analysis
+theory.dtrdpar		Derivatives of variable trough times with respect to log parameter
+theory.dpkdpar		Derivatives of variable peak times with respect to log parameter
+theory.dytr		Derivatives of variables with respect to log parameter at trough times
+theory.dypk		Derivatives of variables with respect to log parameter at peak times
+theory.irc		Infinitesimal response curves
+theory.irc.data		Curves for each parameter
+theory.irc.integrals	Area under each curve  
+theory.irc.maxAdvances	Maximum phase advances for each parameter
+theory.irc.maxDelays	Maximum phase delays for each parameter
+theory.dxdm		Curves under the integral for dy0/dpar
+theory.dperdpar		Derivatives of the oscillator period with repsect to log parameter 
+theory.dy0dpar		dy0/dpar in the standard coordinate system
+theory.yp		Fundamential matrix of equations for variations at t=per
+theory.ircphi		Phase IRCs of the variable peaks
+theory.date		When the time series analysis was performed
+theory.t		Time points used by 'irc', 'dxdm' and 'dgs'
+theory.ircphi_t		Time points used by 'ircphi'
+theory.periodic_dgs	Derivatives of the time series with respect to parameter, scaled to be periodic
+theory.nonper_dgs	Derivatives of the time series with respect to parameter
