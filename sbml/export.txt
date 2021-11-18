@@ -1,0 +1,19 @@
+<html><body style="font-family:'sans serif';padding-left:5px;padding-right:5px">
+<p><u>Exporting a Model to SBML</u></p>
+
+<p>The model will be exported to SBML Level 2 format as follows:</p>
+<ul>
+<li>The model name will provide the model <code>id</code> attribute. You will be able to enter a <code>name</code> attribute and extensive model notes if required.
+<li>Species defined in the model .varn file will form the <code>listOfSpecies</code> block. 
+Species names will form the SBML <code>id</code> attribute, species descriptions will form the <code>name</code> attribute
+ and initial values will form the <code>initialConcentration</code> or <code>initialAmount</code> attribute.
+<li>Parameters defined in the model .par file will form the <code>listOfParameters</code> block. Parameter names will form the SBML <code>id</code> attribute, 
+parameter descriptions will form the <code>name</code> attribute and parameter values will form the <code>value</code> attribute.
+<li>Model ODEs are converted to <code>rateRule</code> blocks. 
+The MathML is generated using <a href="http://www2.ph.ed.ac.uk/snuggletex/">SnuggleTex</a>, available freely from the 
+Department of Physics and Astronomy, University of Edinburgh.
+<li>Model <code>force</code> functions will be converted to SBML <code>functionDefinition</code> blocks. 
+You will be able to select a force type to provide the function body. Should they appear in the function body, the function will be given the following input parameters:  
+<code>dawn</code>, <code>dusk</code>, <code>cycle period</code> and <code>time</code>. These parameters can be renamed and will be added to the <code>listOfParameters</code> block as required.
+
+</ul></body></html>
