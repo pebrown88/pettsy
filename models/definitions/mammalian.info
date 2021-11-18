@@ -1,0 +1,42 @@
+% File created at 18-Jan-2010 16:01:38
+%%%info Leloup-Goldbeter mammalian model
+% =====================================
+% This sets the default end time for a signallng system
+tend
+100.000000
+% =====================================
+% This tells which ode solver method to use by default. Typical ones are ode45 and ode15s
+method
+matlab_non-stiff
+% =====================================
+This is the force type used from the file /shared/get_force_expr
+force_type
+photo
+% =====================================
+The period of an oscillating force
+cycle_period
+24
+% =====================================
+% This tells whether to treat all variables as non-negative or not. Options are non-negative and allow_negative
+positivity
+non-negative
+% =====================================
+Options are oscillator and signal. This tells us whether the solution should be periodic or not
+orbit_type
+oscillator
+% =====================================
+This is scaling factor for time i.e. if computation is in mins and the plot in hours then plotting_timescale = 60: tnew = t/plotting_timescale
+plotting_timescale
+1
+% =====================================
+The number of dimensions the model has
+dim
+16
+% =====================================
+The number of parameters, including dawn, dusk and amp
+pnum
+56
+% =====================================
+Possible force_types, those that were defined when make() was run on this model. The gui allows the user to select one of these
+all_force_types
+photo 0:impulse 0:hoffman 0:sinewave 0:60 0:100 0:200 0:cts 1:noforce 1:

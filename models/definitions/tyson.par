@@ -1,0 +1,12 @@
+vm         1         "max mRNA transcription"
+km         0.1       "mRNA degradation    "
+vp         0.5       "Protein translation "
+kp1        10        "monomer phosphorylation"
+kp2        0.03      "dimer phosphorylation"
+kp3        0.1       "Protein degradation "
+keq        200       "dimerisation equilibrium"
+pc         0.1       "dimer concentration constant"
+jp         0.05      "MM for DBT          "
+amp         0
+dawn        0
+dusk    0
